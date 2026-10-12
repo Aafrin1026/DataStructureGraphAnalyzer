@@ -219,4 +219,19 @@ public class ArrayOperations {
             data = Arrays.copyOf(data, newCapacity);
         }
     }
+    /**
+ * Counts how many times a value appears in the array.
+ * Time complexity: O(n)
+ */
+public int countOccurrences(int value) {
+    int count = 0;
+
+    for (int i = 0; i < size; i++) {
+        if (data[i] == value) {
+            count++;
+        }
+    }
+
+    return count;
+}
 }
